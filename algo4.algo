@@ -1,0 +1,14 @@
+PROCEDURE sort_algo(VAR arr : ARRAY_OF INTEGER)
+VAR
+    i,j,c : INTEGER;
+BEGIN
+    FOR i FROM 1 TO arr.length-1 DO
+        c:= arr [i];
+        j := i-1;
+        REPEAT
+            arr[j+1] := arr[j];
+            j := j-1;
+        UNTIL (j >= 0 AND arr[j] > card) 
+        arr[j+1] = card;
+    END_FOR
+END
